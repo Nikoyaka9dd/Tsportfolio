@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ポートフォリオ</title>
+    <title>Niko's site</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="logo">My Portfolio</div>
+        <div class="logo">T's portfolio</div>
         <nav>
             <ul class="nav-links">
                 <li><a href="#profile">プロフィール</a></li>
@@ -20,33 +20,11 @@
     
     <section id="profile" class="section">
         <h2>プロフィール</h2>
-        <p id="profile-text">シンプルな自己紹介を書きましょう。</p>
-        <button onclick="updateProfile()">更新</button>
+        <p id="profile-text">書くぞ</p>
     </section>
     
     <section id="career" class="section">
         <h2>経歴</h2>
-        <p id="career-text">あなたの経歴を記述してください。</p>
-        <button onclick="updateCareer()">更新</button>
+        <p id="career-text">書くぞ</p>
     </section>
-    
-    <script>
-        function toggleMenu() {
-            const navLinks = document.querySelector('.nav-links');
-            navLinks.classList.toggle('active');
-        }
-
-        function updateProfile() {
-            const profileText = document.getElementById('profile-text');
-            const newText = prompt("新しいプロフィールを入力してください:", profileText.textContent);
-            if (newText) profileText.textContent = newText;
-        }
-
-        function updateCareer() {
-            const careerText = document.getElementById('career-text');
-            const newText = prompt("新しい経歴を入力してください:", careerText.textContent);
-            if (newText) careerText.textContent = newText;
-        }
-    </script>
-</body>
 </html>
