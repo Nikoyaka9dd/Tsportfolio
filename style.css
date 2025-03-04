@@ -45,10 +45,15 @@ nav {
     color: black;
 }
 
-.hamburger {
-    display: none;
-    font-size: 1.5em;
-    cursor: pointer;
+.timeline-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.timeline {
+    width: 48%;
+    height: 400px;
+    overflow: hidden;
 }
 
 /* セクション */
